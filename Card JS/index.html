@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Gaming notebook</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="assets/img/msi.png">
+            <h3><strong>MSI Raider GE75</strong></h3>
+            <input id="cantidad" placeholder="Cantidad" />
+            <input id="color" placeholder="Color" />
+            <h2>Precio: <strong id="precio">2.000.000</strong></h2>
+            <button onclick="calcular()" class="calcular-total">Calcular total</button>
+        </div>
+
+        <div class="resumen">
+            <h2 >Total: <label class="precio-final"></label></h2>
+            <h2>Cantidad: <label class="cantidad-final"></label></h2>
+            <h2>Color: <label class="color-final"></label></h2>
+        </div>
+
+    </div>
+
+    <script src="assets/JavaScript/script.js" ></script>
+</body>
+</html>
