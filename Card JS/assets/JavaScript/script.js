@@ -9,18 +9,19 @@
     document.querySelector("#precio-final").innerText = "$" + total
     document.querySelector("#cantidad-final").innerText = cantidad + " unidades"
     
+    
+   
+    let color = document.querySelector("#colorSelection option:checked").value;
 
-})
-    let negra = document.getElementById('#negra');
-    let azul = document.getElementById('#azul');
-    let blanca = document.getElementById('#blanca');
-    let gris = document.getElementById('#gris');
-    let selectColor = document.querySelector('#select-color')
+    console.log(color);
+    
+        document.querySelector("#color-final").style.background = color;
+        
 
-    selectColor.addEventListener ("change", function(){
-        if (selectColor.innerText == negra){
-            document.querySelector("#color-final").style.background = "black";
-        }
+   
+    
+
+    
     })
     
     
