@@ -1,15 +1,30 @@
-function calcular() {
+    let b = document.querySelector('#calcular-total')
+    
+    b.addEventListener ("click", function() {
     let cantidad = document.querySelector ("#cantidad").value
-    let elegirColor = document.querySelector ("#color").value
-    let precio = document.querySelector ("#precio").value
+    let precio = document.querySelector ("#precio").innerText
 
-    let total = number(cantidad) * number(precio)
-    let color = string(elegirColor)
+    let total = Number(cantidad) * Number(precio)
 
-    document.querySelector(".precio-final").textContent = "$" + total
-    document.querySelector(".cantidad-final").textContent = cantidad + "unidades"
-    document.querySelector(".color-final").textContent = color
+    document.querySelector("#precio-final").innerText = "$" + total
+    document.querySelector("#cantidad-final").innerText = cantidad + " unidades"
+    
 
-}
+})
+    let negra = document.getElementById('#negra');
+    let azul = document.getElementById('#azul');
+    let blanca = document.getElementById('#blanca');
+    let gris = document.getElementById('#gris');
+    let selectColor = document.querySelector('#select-color')
+
+    selectColor.addEventListener ("change", function(){
+        if (selectColor.innerText == negra){
+            document.querySelector("#color-final").style.background = "black";
+        }
+    })
+    
+    
+
+    
 
 
